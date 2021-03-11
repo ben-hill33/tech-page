@@ -22,6 +22,16 @@ Users will be able to:
 ### Stretch goals
 - when creating a new post, give functionality _on text highlight_ to make the text bold, italic, enter headers (maybe just h1 and h2 to start), add quotations, and add a hyperlink
 
+### Dependencies
+- [django-allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)
+- [django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+- [django-debug-toolbar](https://django-debug-toolbar.readthedocs.io/en/latest/)
+- [whitenoise](http://whitenoise.evans.io/en/stable/)
+
+**Project template courtesy of [DjangoX](https://github.com/wsvincent/djangox)**
+
+
+
 
 
 
