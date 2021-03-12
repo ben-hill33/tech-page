@@ -1,0 +1,18 @@
+{% extends '_base.html' %}
+
+{% block content %}
+{% for post in post_list %}
+
+<li>
+  <a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a>
+  <br />
+</li>
+
+<div>
+  <p>Published on: {{ post.published_date|date:"D M Y" }} </p>
+
+</div>
+
+
+{% endfor %}
+{% endblock content %}

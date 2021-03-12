@@ -1,0 +1,22 @@
+{% extends '_base.html' %}
+
+
+{%block content %}
+<p>Author: {{ post.author }}</p>
+<p>Title: {{ post.title }}</p>
+<p>{{ post.text|linebreaks }}</p>
+<hr />
+<div class="btn btn-success">
+  <a href="{% url 'update_post' post.pk %}"> Update Post</a>
+</div>
+<hr />
+<div class="btn btn-success">
+  <a href="{% url 'post_publish' post.pk %}"> Publish Post</a>
+</div>
+<hr />
+<div class="btn btn-success">
+  <a href="{% url 'delete_post' post.pk %}"> Delete Post</a>
+</div>
+<hr />
+
+{% endblock content %}
