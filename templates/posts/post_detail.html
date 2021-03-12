@@ -11,6 +11,12 @@
 </div>
 <hr />
 <div class="btn btn-success">
+  <a href="{% url 'post_publish' post.pk %}"> Publish Post</a>
+</div>
+<hr />
+<div class="btn btn-success">
   <a href="{% url 'delete_post' post.pk %}"> Delete Post</a>
 </div>
+<hr />
+
 {% endblock content %}

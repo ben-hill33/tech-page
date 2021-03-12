@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
   <title>{% block title %}DjangoX{% endblock title %}</title>
   <meta name="description" content="A framework for launching new Django projects quickly.">
   <meta name="author" content="">
@@ -26,8 +27,10 @@
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
 
       <h5 class="my-0 mr-md-auto font-weight-normal">
-        <a class="p-2 text-dark" href="{% url 'home' %}">Blog</a>
+        <a class="p-2 text-dark" href="{% url 'home' %}">Home</a>
         <a class="p-2 text-dark" href="{% url 'new_post' %}">New Blog</a>
+        <a class="p-2 text-dark" href="https://github.com/ben-hill33">Github</a>
+        <a class="p-2 text-dark" href="https://www.linkedin.com/in/ben-hill-b4970819b/">LinkedIn</a>
       </h5>
 
       <a class="p-2 text-dark" href="{% url 'about' %}">About</a>
